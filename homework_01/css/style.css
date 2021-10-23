@@ -1,0 +1,150 @@
+body {
+    font-family: sans-serif;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.header {
+    background: #0a9c5c;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+ .color-background {
+     background: #f1f0f0;
+ }
+
+ .main-block {
+     display: flex;
+ }
+
+ .sidebar {
+     min-width: 200px;
+     min-height: 500px;
+}
+.sidebar label {
+    display: block;
+}
+ .content{
+     padding: 20px 0;
+     flex-grow: 2;
+ }
+
+p, h1, h2 {
+    margin: 0;
+}
+
+input {
+    margin-left: 20px;
+}
+
+.sidebar_fish-type {
+    font-weight: 600;
+    margin: 0 10px;
+    padding: 10px 0 0 0;
+}
+
+.text, h2 {
+    padding-left: 20px;
+}
+
+.category-block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.category-item {
+    height: 50px;
+    margin-left: 10px;
+    flex-grow: 1;
+    padding: 8px 10px;
+    width: 45%;
+}
+
+.category-item p {
+    color: #74747e;
+}
+
+a {
+    color: #1895fa;
+}
+
+.popular-container {
+    display: grid;
+    place-items:center;
+    margin-top: 20px;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(2,100px);
+    row-gap: 10px;
+}
+.picture {
+    width: 50px;
+    height: 60px;
+    background: #c2c2c4;
+}
+
+.popular-item {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width:150px;
+  height: 60px;
+}
+
+.popular-item button {
+    background: #c2c2c4;
+    border: #c2c2c4;
+    height: 20px;
+    width:70px;
+}
+
+.footer {
+    color:  #74747e;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#footer_copyright {
+    text-align: right;
+}
+
+.footer_contacts {
+    float: left;
+}
+
+@media (min-width:359px) and (max-width:768px) {
+    #wrapper {
+        margin: 0 auto;
+        width: 360px;
+    }
+    .sidebar {
+        min-width: 120px;
+        min-height: 500px;
+   }
+   
+    .popular-container {
+        display: grid;
+        place-items:center;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,1fr);
+        row-gap: 5px;
+        justify-content: center;
+    }
+}
