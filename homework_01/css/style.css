@@ -30,8 +30,8 @@ body {
     position:absolute;
     top:0;
     background-color: rgb(0,0,0);
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     animation-name:bounce_fountain;
     animation-duration:1.5s;
     animation-iteration-count:infinite;
@@ -54,11 +54,11 @@ body {
 @-moz-keyframes bounce_fountain {
     0%{
         transform: scale(1);
-        background-color: rgb(0,0,0);
+        background-color: rgb(255,255,255);
     }
     100%{
         transform:scale(.3);
-            background-color:rgb(255,255,255);
+            background-color:#0a9c5c;
         }
 }
  .color-background {
