@@ -1,0 +1,56 @@
+.header {
+    background: #0a9c5c;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+    font-weight: 600;
+}
+.header h1{
+    font-size: 18px;
+}
+#loader{
+    position: relative;
+    left:180px;
+    width:200px;
+    height: 28px;
+    margin: auto;
+}
+#fountain {
+    position:absolute;
+    top:0;
+    background-color: rgb(0,0,0);
+    width: 20px;
+    height: 20px;
+    animation-name:bounce_fountain;
+    animation-duration:1.5s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    transform:scale(.3);
+    border-radius:19px;
+}
+.loader_f1 {
+    left:0;
+	animation-delay:0.6s;
+}
+.loader_f2 {
+    left:25px;
+	animation-delay:0.75s;
+}
+.loader_f3 {
+    left:50px;
+	animation-delay:0.9s;
+}
+@-moz-keyframes bounce_fountain{
+    0%{
+        transform: scale(1);
+        background-color: rgb(255,255,255);
+    }
+    100%{
+        transform:scale(.3);
+            background-color:#0a9c5c;
+        }
+}
