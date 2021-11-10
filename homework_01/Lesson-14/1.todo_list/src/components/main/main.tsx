@@ -13,30 +13,26 @@ export default class Main extends React.Component{
             finished:false,
             id: Math.random()*100,
         };
-        this.setState({
+        if(this.state.text.trim()!=="") { this.setState({
             todo:[data,...this.state.todo],
             text:"",
-        })
+        },()=>{
         const dataJSON=JSON.stringify(this.state.todo);
-        localStorage.setItem("myarr",dataJSON);
+        localStorage.setItem("task",dataJSON);
+        })}
+       
     }
     handleRemove=(id:any)=>{
         this.setState({
-            todo:this.state.todo.filter(item=>item.id!==id),
-        })  
+            todo:this.state.todo.filter((item:any)=>item.id!==id),
+        },()=>localStorage.setItem("task",JSON.stringify(this.state.todo)))  
     }
 
     state={
-     todo:InworkResponse.result,
+     todo:localStorage.getItem("task")?JSON.parse(localStorage.getItem("task") as string):[],
      text:"",
     }
-    componentDidMount=()=>{
-        const ls=localStorage.getItem('myarr') || "вернулась ошибка";
-        const dataParce=JSON.parse(ls);
-        this.setState({
-            todo:dataParce,
-        })
-    }
+   
     render(){
         const {todo}=this.state
        
