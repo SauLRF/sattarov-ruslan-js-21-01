@@ -27,6 +27,12 @@
     <div id="wrapper">
     <header class="header">
        <h1>Интернет-магазин "Не только красивое"</h1>
+       <div id="loader">
+           <div id="fountain" class="loader_f1"></div>
+           <div id="fountain" class="loader_f2"></div>
+           <div id="fountain" class="loader_f3"></div>
+          
+       </div>
     </header>
     <main class="main-block">
         <aside class="sidebar color-background">
@@ -76,37 +82,50 @@
             <h2>Популярные</h2>
             <div class="popular-container">
                 <div class="popular-item color-background">
-                    <img class="picture" alt="здесь картинка"/>
+                    <img class="picture" alt="img"/>
                     <a href="#" >Палтус</a>
                     <button>Купить</button>
                 </div>
                 <div class="popular-item color-background">
-                    <img class="picture" alt="здесь картинка"/>
+                    <img class="picture" alt="img"/>
                     <a href="#">Сёмга</a>
                     <button>Купить</button>
                 </div>
                 <div class="popular-item color-background">
-                    <img class="picture" alt="здесь картинка"/>
+                    <img class="picture" alt="img"/>
                     <a href="#" >Сом</a>
                     <button>Купить</button>
                 </div>
                 <div class="popular-item color-background">
-                    <img class="picture" alt="здесь картинка"/>
+                    <img class="picture" alt="img"/>
                     <a href="#" >Мойва</a>
                     <button>Купить</button>
                 </div>
                 <div class="popular-item color-background">
-                    <img class="picture" alt="здесь картинка"/>
+                    <img class="picture" alt="img"/>
                     <a href="#" >Сельдь</a>
                     <button>Купить</button>
                 </div>
                 <div class="popular-item color-background">
-                    <img class="picture" alt="здесь картинка"/>
+                    <img class="picture" alt="img"/>
                     <a href="#" >Тунец</a>
                     <button>Купить</button>
                 </div>
             </div>
         </div>
+        <form class="main_form">
+        <table class="table_homework">
+            <tbody><tr><th>Имя</th><th>Телефон</th><th>Адресс</th></tr>
+            <tr><td>Евдоким</td><td>+7-904-535-87-53</td><td>Молодежная</td><td><button type="button" class="delete">Удалить</button></td>></tr>
+            <tr><td>Ольга</td><td>+7-904-456-87-53</td><td>Осипова</td><td><button type="button" class="delete">Удалить</button></td>></tr>
+        </tbody>
+        </table>
+        <input class="table_input" type="text" placeholder="Введите имя/телефон/адрес через пробел"></td>
+        <button class="createRow" type="button">+</button></form>
+        <p>Укажите цвет фона таблицы: 
+            <input class="color-table" type="color" name="bg" value="#ff0000"> 
+            <p>Укажите цвет текста таблицы: 
+            <input class="color-table_text" type="color" name="bg" value="#ff0000"> 
     </section>
 </main>
     <footer class="footer color-background">
@@ -114,6 +133,7 @@
         <p id="footer_copyright">© 2021 ИП Рыбов О.А.</p>
     </footer>
 </div>
+<script src="js/main_scripts.js"></script>
 </body>
 </html>
 >>>>>>> origin/main

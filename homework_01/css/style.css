@@ -1,16 +1,14 @@
 body {
     font-family: sans-serif;
 }
-
 #wrapper {
     margin: 0 auto;
     width: 800px;
 }
-
 .header {
     background: #0a9c5c;
     height: 50px;
-    display: flex;
+    display:flex;
     align-items: center;
     margin-bottom: 10px;
     font-size: 20px;
@@ -18,7 +16,52 @@ body {
     padding-left: 10px;
     font-weight: 600;
 }
+.header h1{
+    font-size: 18px;
+}
+#loader{
+    position: relative;
+    left:180px;
+    width:200px;
+    height: 28px;
+    margin: auto;
+}
+#fountain {
+    position:absolute;
+    top:0;
+    background-color: rgb(0,0,0);
+    width: 20px;
+    height: 20px;
+    animation-name:bounce_fountain;
+    animation-duration:1.5s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    transform:scale(.3);
+    border-radius:19px;
+}
+.loader_f1 {
+    left:0;
+	animation-delay:0.6s;
+}
+.loader_f2 {
+    left:25px;
+	animation-delay:0.75s;
+}
+.loader_f3 {
+    left:50px;
+	animation-delay:0.9s;
+}
 
+@-moz-keyframes bounce_fountain {
+    0%{
+        transform: scale(1);
+        background-color: rgb(255,255,255);
+    }
+    100%{
+        transform:scale(.3);
+            background-color:#0a9c5c;
+        }
+}
  .color-background {
      background: #f1f0f0;
  }
@@ -38,7 +81,27 @@ body {
      padding: 20px 0;
      flex-grow: 2;
  }
+ .table_homework {
+    border-collapse:collapse;
+   color:red
+}
+.table_homework th {
+    border: 1px solid rgb(230,231,232);
+    padding:0;
+    margin:0;}
 
+.table_homework td {
+    border: 1px solid rgb(230,231,232);
+    padding:0;
+    margin:0;
+    width:200px;
+}
+.table_input{
+    width:400px;
+}
+.main_form {
+    display:block;
+}
 p, h1, h2 {
     margin: 0;
 }
@@ -52,11 +115,9 @@ input {
     margin: 0 10px;
     padding: 10px 0 0 0;
 }
-
 .text, h2 {
     padding-left: 20px;
 }
-
 .category-block{
     display: flex;
     flex-direction: row;
@@ -66,7 +127,6 @@ input {
     margin: 20px 0;
     align-items: center;
 }
-
 .category-item {
     height: 50px;
     margin-left: 10px;
@@ -100,13 +160,23 @@ a {
 .popular-item {
   display:flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   width:150px;
   height: 60px;
+  transition-duration: 1s;
 }
-
+.popular-item:hover{
+    background-color:#74747e;
+}
+.popular-item:hover a{
+  color:white;
+  text-decoration: none;
+}
+.popular-item:hover button{
+   background-color:#f4c4c0;
+  }
 .popular-item button {
     background: #c2c2c4;
     border: #c2c2c4;
