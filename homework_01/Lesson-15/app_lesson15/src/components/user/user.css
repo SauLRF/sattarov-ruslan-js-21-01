@@ -1,0 +1,17 @@
+.user {
+    width:350px;
+    display:flex;
+    align-items: flex-start;
+    height: 150px;
+    background-color:white;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.user_img {
+  margin-right: 10px;
+}
+.user_dark {
+  background-color: black;
+  color:white;
+  border: 1px solid white;
+}
