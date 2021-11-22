@@ -1,0 +1,53 @@
+.main {
+    width: 800px;
+    margin:0 auto;
+}
+
+.main_title {
+    font-size: 25px;
+    font-weight: 700;
+    
+}
+.main_users {
+    min-height: 200px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.user_amount_text_dark {
+    color:white;
+}
+.main_pagination {
+    display:flex;
+    justify-content:space-between;
+}
+.main_pagination__pag a {
+    display:inline-block;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px/10px;
+    width:20px;
+    height: 20px;
+    text-align: center;
+    margin-right: 2px;
+}
+.main_pagination__pag a:hover {
+    background-color: blanchedalmond;
+}
+.main_pagination__pag__dark a{
+    color:white;
+    border-color:white;
+    
+}
+.main_pagination__pag__dark a:hover{
+    background-color:grey;
+   
+}
+.user_amount {
+    margin-bottom: 10px;
+}
+.user_amount input {
+  margin-left:5px;
+  width:40px;
+}

@@ -1,0 +1,35 @@
+.main-todo{
+    margin-top:20px;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    min-height: 200px;
+   
+    align-items: center;
+}
+.main-todo_inwork{
+    border: 5px solid;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 30px/90px;
+    height: 200px;
+    width:250px;
+    padding: 0px;
+}
+.button-plus {
+    margin-left:5px;
+}
+.main-todo_inwork li {
+    list-style-type: none;
+     margin:0px;
+    padding-top:10px;
+}
+.main-todo_inwork li>a {
+    text-decoration: none;
+    color:black;
+    margin:0px;
+    padding:0px;
+}
+.main-todo_inwork li>a:hover {
+    color:rgba(114, 112, 112, 0.678)
+}

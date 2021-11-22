@@ -1,0 +1,29 @@
+.sidebar {
+    min-width: 200px;
+    min-height: 500px;
+}
+.sidebar label {
+   display: block;
+}
+.sidebar_fish-type {
+    font-weight: 600;
+    margin: 0 10px;
+    padding: 10px 0 0 0;
+}
+p, h1, h2 {
+    margin: 0;
+}
+
+input {
+    margin-left: 20px;
+}
+@media (min-width:359px) and (max-width:768px) {
+  
+    .sidebar {
+        min-width: 120px;
+        min-height: 500px;
+   }
+   
+  
+  }
+  
