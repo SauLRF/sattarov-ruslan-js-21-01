@@ -1,0 +1,11 @@
+.header {
+    background: rgba(193, 235, 222, 0.931);
+    height: 50px;
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: rgba(3, 3, 3, 0.226);
+    padding-left: 10px;
+    font-weight: 600;
+}

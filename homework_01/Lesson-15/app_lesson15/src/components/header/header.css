@@ -1,0 +1,25 @@
+.header {
+    width:auto;
+    display: flex;
+    background-color:white;
+    justify-content: space-around;
+    min-height:70px;
+    align-items: center;
+}
+.header_info p {
+    display:inline-block;
+    margin-right:5px;
+}
+.header_info select {
+    width:50px;
+}
+.header_login__load p{
+    display:inline-block;
+    margin-right: 10px;
+    margin-left:10px;
+}
+.header_login {
+    display:flex;
+    align-items: center;
+    
+}

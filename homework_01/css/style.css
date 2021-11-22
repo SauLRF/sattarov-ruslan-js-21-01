@@ -70,7 +70,7 @@ body {
      display: flex;
  }
 
- .sidebar {
+.sidebar {
      min-width: 200px;
      min-height: 500px;
 }
@@ -83,7 +83,7 @@ body {
  }
  .table_homework {
     border-collapse:collapse;
-   color:red
+ 
 }
 .table_homework th {
     border: 1px solid rgb(230,231,232);

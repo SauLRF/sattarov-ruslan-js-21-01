@@ -1,0 +1,8 @@
+.wrapper{
+  width:1200px;
+  margin:0 auto;
+  background-color: darkgray;
+}
+.wrapper_dark {
+  background-color: black;
+}
