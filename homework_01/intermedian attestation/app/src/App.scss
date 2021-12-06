@@ -1,0 +1,14 @@
+@import "./utility/utility";
+
+.App {
+  text-align: center;
+}
+.wrapper {
+  margin:0 auto;
+  background-color:$bgColorCont_lightTheme;
+}
+.app-container {
+  background-color: $bgColor_lightTheme;
+  width: 1300px;
+  margin:0 auto;
+}

@@ -1,0 +1,17 @@
+@import "../../utility/utility";
+.Header {
+    background-color: $mainColor_lightTheme;
+}
+.Header-wrapper {
+    width: 900px;
+    min-height: 60px;
+    display:flex;
+    justify-content: space-between;  
+    margin:0 auto;
+}
+.Header-sidebar {
+    display:flex;
+}
+.Header-auth {
+    display:flex;
+}
